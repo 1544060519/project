@@ -1,0 +1,70 @@
+下载git
+登录github https://github.com/ #git官网
+获取密钥：ssh-keygen    桌面右键 git bash here                 打开id_rsa.pub文件
+github setting->ssh and gpg keys   粘贴密钥
+
+
+确定git和github已经连接成功 
+问题：文件默认隐藏 此电脑->查看->显示/隐藏
+
+拉代码
+法1：新建文件夹 右键 git bash here 输入
+git init 显示.git 文件
+git remote add origin github->ssh地址
+git pull origin master #拉代码 问题有密码
+
+法2：新建文件夹 右键 git bash here
+git clone github->http地址
+
+上存代码
+git push origin master #用户名 密码
+git push . #所有文件
+
+
+$ mkdir learngit
+$ cd learngit
+$ pwd
+/Users/michael/learngit
+git init
+ls -ah 显示隐藏文件
+
+git config --global http.sslVerify "false"
+
+repository 仓库
+star 收藏
+folk 克隆代码
+pull request 
+watch 关注
+issue 事务
+翻墙 shadowsocks
+git status
+git add 文件 暂存区
+git commit -m 
+//配置信息设置
+git config --global user.name ‘用户名’
+ls 文件
+pwd 目录
+git config --global user.email  '邮箱'
+git config --list
+//添加文件
+touch xx.php
+git add xx.php暂存区
+git commit -m '描述'
+//修改文件
+vi xx.php
+git add xx.ph
+git commit -m ''
+//删除文件
+rm -rf xx.pnp
+git rm xx.php
+git commit -m ''
+//远程
+git clone 仓库地址
+touch
+git add 
+git commit 
+git push
+//搭建网站
+hittps://用户名.github.io
+1创建个人站点 新建仓库 仓库名必须是用户名
+html 文件
